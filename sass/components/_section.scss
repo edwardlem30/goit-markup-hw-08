@@ -42,7 +42,10 @@
         }
 
     &__item .text {
+        
         color: var(--primary-txt-color);
+
+
     }   
 }
 
@@ -53,12 +56,9 @@
     list-style: none;
     gap: var(--indent);
     align-items: center;
+    --items: 1;
     
-    
-        @media screen and (min-width: 320px) and (max-width: 767px) {
-            
-            --items: 1;
-        }
+        
     
         @media screen and (min-width: 768px) {
             display: flex;

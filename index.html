@@ -25,7 +25,17 @@
 	<body>
 		<!-- Header -->
 		<header class="header">
-			<div class="container main">
+			<div class="container">
+				<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu"></button>
+				<div class="menu-container js-menu-container" id="mobile-menu">
+					<button class="menu-toggle js-close-menu"></button>
+					<ul class="mobile-menu">
+						<li href="" class="link">О нас</li>
+						<li href="" class="link">Работы</li>
+						<li href="" class="link">Контакты</li>
+						<li href="" class="link">Карьера</li>
+					</ul>
+				</div>
 				<nav class="header__nav">
 					<a class="logo" href="./index.html">
 						<span class="logo__cl animate__animated animate__fadeInLeftBig">Web</span>
@@ -63,6 +73,44 @@
 					</li>
 				</ul>
 			</div>
+			<!-- <div class="container main">
+				<nav class="header__nav">
+					<a class="logo" href="./index.html">
+						<span class="logo__cl animate__animated animate__fadeInLeftBig">Web</span>
+						Studio
+					</a>
+
+					<ul class="header__nav__list">
+						<li class="header__nav__item">
+							<a class="header__nav__link studio current" href="./index.html">Студия</a>
+						</li>
+						<li class="header__item">
+							<a class="header__nav__link portfolio" href="./portfolio.html">Портфолио</a>
+						</li>
+						<li class="header__item">
+							<a class="header__nav__link contact" href="">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<ul class="header__nav__contact">
+					<li class="header__nav__item">
+						<a class="link" href="mailto:info@devstudio.com">
+							<svg class="icon" width="16" height="12">
+								<use href="./images/icons.svg#icon-mail"></use>
+							</svg>
+							info@devstudio.com
+						</a>
+					</li>
+					<li class="header__nav__item">
+						<a class="link" href="tel:+380961111111">
+							<svg class="icon" width="10" height="16">
+								<use href="./images/icons.svg#icon-tell"></use>
+							</svg>
+							+38 096 111 11 11
+						</a>
+					</li>
+				</ul>
+			</div> -->
 		</header>
 		<!-- Main -->
 		<main>
@@ -509,90 +557,93 @@
 		<!-- Footer -->
 		<footer class="footer">
 			<div class="container footer__flex">
-				<div class="logo__contact">
-					<a class="logo" href="./index.html">
-						<span class="logo__cl animate__animated animate__fadeInLeftBig">Web</span>
-						Studio
-					</a>
-					<!-- Contacts -->
-					<address class="footer__flex__contact">
-						<ul class="footer__flex__list">
-							<li class="footer__flex__item">
+				<div class="footer__flex__box">
+					<div class="logo__contact">
+						<a class="logo" href="./index.html">
+							<span class="logo__cl animate__animated animate__fadeInLeftBig">Web</span>
+							Studio
+						</a>
+						<!-- Contacts -->
+						<address class="footer__flex__contact">
+							<ul class="footer__flex__list">
+								<li class="footer__flex__item">
+									<a
+										class="link-map"
+										href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
+										target="_blank"
+										rel="noopener nofollow noreferrer"
+									>
+										г.Киев, пр. Леси Украинки, 26
+									</a>
+								</li>
+								<li class="footer__flex__item">
+									<a class="link" href="mailto:info@example.com">info@example.com</a>
+								</li>
+								<li class="footer__flex__item">
+									<a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+								</li>
+							</ul>
+						</address>
+					</div>
+					<div class="footer__flex__visit">
+						<p class="footer__flex__visit-join">присоединяйтесь</p>
+						<ul class="social__media">
+							<li class="social__media__item">
 								<a
-									class="link-map"
-									href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
+									class="social__media__link-visit"
+									href=""
 									target="_blank"
-									rel="noopener nofollow noreferrer"
+									rel="noopener noreferrer"
+									aria-label="instagram"
 								>
-									г.Киев, пр. Леси Украинки, 26
+									<svg class="social__media__icon-footer" width="20" height="20">
+										<use href="./images/icons.svg#icon-instagram-footer"></use>
+									</svg>
 								</a>
 							</li>
-							<li class="footer__flex__item">
-								<a class="link" href="mailto:info@example.com">info@example.com</a>
+							<li class="social__media__item">
+								<a
+									class="social__media__link-visit"
+									href=""
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="twitter"
+								>
+									<svg class="social__media__icon-footer" width="20" height="20">
+										<use href="./images/icons.svg#icon-twitter-footer"></use>
+									</svg>
+								</a>
 							</li>
-							<li class="footer__flex__item">
-								<a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+							<li class="social__media__item">
+								<a
+									class="social__media__link-visit"
+									href=""
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="facebook"
+								>
+									<svg class="social__media__icon-footer" width="20" height="20">
+										<use href="./images/icons.svg#icon-facebook-footer"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social__media__item">
+								<a
+									class="social__media__link-visit"
+									href=""
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="linkedin"
+								>
+									<svg class="social__media__icon-footer" width="20" height="20">
+										<use href="./images/icons.svg#icon-linkedin-footer"></use>
+									</svg>
+								</a>
 							</li>
 						</ul>
-					</address>
+					</div>
 				</div>
-				<div class="footer__flex__visit">
-					<p class="footer__flex__visit-join">присоединяйтесь</p>
-					<ul class="social__media">
-						<li class="social__media__item">
-							<a
-								class="social__media__link-visit"
-								href=""
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label="instagram"
-							>
-								<svg class="social__media__icon-footer" width="20" height="20">
-									<use href="./images/icons.svg#icon-instagram-footer"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social__media__item">
-							<a
-								class="social__media__link-visit"
-								href=""
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label="twitter"
-							>
-								<svg class="social__media__icon-footer" width="20" height="20">
-									<use href="./images/icons.svg#icon-twitter-footer"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social__media__item">
-							<a
-								class="social__media__link-visit"
-								href=""
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label="facebook"
-							>
-								<svg class="social__media__icon-footer" width="20" height="20">
-									<use href="./images/icons.svg#icon-facebook-footer"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social__media__item">
-							<a
-								class="social__media__link-visit"
-								href=""
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label="linkedin"
-							>
-								<svg class="social__media__icon-footer" width="20" height="20">
-									<use href="./images/icons.svg#icon-linkedin-footer"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
+
 				<div class="form">
 					<p class="form__write">подпишитесь на рассылку</p>
 					<form class="register">
@@ -607,8 +658,28 @@
 				</div>
 			</div>
 		</footer>
+		<!-- Choices JavaScript (latest) start -->
+		<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+		<script src="./js/datalist.js"></script>
+		<!-- Choices JavaScript (latest) end -->
+
+		<!-- Inputmask start -->
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.9/inputmask/inputmask.min.js"
+			integrity="sha512-DVfS/GbZzLMmxBL/CW92N84eHP2Fq9d+r9RKbvctcvzISVfu+WvD+MCvbK9j8I6nVLrntGo3UUVrNFUDX0ukBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="./js/input-mask.js"></script>
+		<!-- Inputmask end -->
 		<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
 		<script src="./js/header-scroll.js"></script>
 		<script src="./js/modal.js"></script>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>
