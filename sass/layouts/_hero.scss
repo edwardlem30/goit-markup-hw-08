@@ -1,13 +1,13 @@
 /* Block Hero */
 .hero {
-    position: relative;
+    
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 118px;
     padding-bottom: 118px;
-
+    text-align: center;
     background-color: var(--hero-bcg);
 
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/home/Mobile-1х.jpg);
@@ -51,6 +51,7 @@
 
         // PC
             @media screen and (min-width: 1200px) {
+                position: relative;
                 padding-top: 200px;
                 padding-bottom: 200px;
                 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/home/Img_PC-1x.jpg);
@@ -74,8 +75,10 @@
 
     &__title {
         
-        max-width: 696px;
+        max-width: 360px;
         margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 30px;
 
         font-weight: 900;

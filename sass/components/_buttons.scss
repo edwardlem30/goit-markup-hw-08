@@ -1,5 +1,11 @@
 .button {
     @include button;
+
+    @media screen and (min-width: 1200px) {
+        position: absolute;
+        left: 44%;
+        bottom: 34%;
+    }
 }
 
 .button.primary {

@@ -2,6 +2,18 @@
 .header {
     border-bottom: 1px solid #ECECEC;
 
+    &-mobile {
+
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+                max-width: 767px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+    }
     &__item {
             position: relative;
             text-decoration: none;
@@ -60,17 +72,26 @@
 .header__nav {
     display: flex;
     
-
-    @media screen and (min-width: 1200px) {
-        
-    }
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
 
     &__contact {
-        display: flex;
-        justify-content: center;
-        margin-left: auto;
-        padding: 0;
-        gap: 30px;
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            padding: 21px 0;
+            margin-left: 84px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            justify-content: center;
+            margin-left: auto;
+            padding: 32px 0;
+            gap: 30px;
+        }
     }
 
     &__list {

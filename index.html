@@ -25,23 +25,55 @@
 	<body>
 		<!-- Header -->
 		<header class="header">
-			<div class="container">
-				<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu"></button>
+			<div class="container header-mobile">
+				<a class="logo" href="./index.html">
+					<span class="logo__cl animate__animated animate__fadeInLeftBig">Web</span>
+					Studio
+				</a>
+				<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+					<svg class="icon-menu" width="40" height="40">
+						<use href="./images/icons.svg#icon-menu-open"></use>
+					</svg>
+				</button>
 				<div class="menu-container js-menu-container" id="mobile-menu">
-					<button class="menu-toggle js-close-menu"></button>
+					<button class="menu-toggle js-close-menu">
+						<svg class="mobile-close-icon" width="40" height="40">
+							<use href="./images/icons.svg#icon-menu-close"></use>
+						</svg>
+					</button>
 					<ul class="mobile-menu">
-						<li href="" class="mobile-menu__link">О нас</li>
-						<li href="" class="mobile-menu__link">Работы</li>
-						<li href="" class="mobile-menu__link">Контакты</li>
-						<li href="" class="mobile-menu__link">Карьера</li>
+						<li href="" class="mobile-menu__link"><a href="./index.html" class="link-menu">Студия</a></li>
+						<li href="" class="mobile-menu__link"><a href="./portfolio.html" class="link-menu">Портфолио</a></li>
+						<li href="" class="mobile-menu__link"><a href="" class="link-menu">Контакты</a></li>
+					</ul>
+					<ul class="menu-container__contact">
+						<li class="menu-container__item">
+							<a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+						</li>
+						<li class="menu-container__item">
+							<a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+						</li>
+					</ul>
+					<ul class="menu-container__social">
+						<li>
+							<a href="" class="link-menu__social"></a>
+							Instagram
+						</li>
+						<li>
+							<a href="" class="link-menu__social"></a>
+							Twitter
+						</li>
+						<li>
+							<a href="" class="link-menu__social"></a>
+							Facebook
+						</li>
+						<li>
+							<a href="" class="link-menu__social"></a>
+							Linkedin
+						</li>
 					</ul>
 				</div>
 				<nav class="header__nav">
-					<a class="logo" href="./index.html">
-						<span class="logo__cl animate__animated animate__fadeInLeftBig">Web</span>
-						Studio
-					</a>
-
 					<ul class="header__nav__list">
 						<li class="header__nav__item">
 							<a class="header__nav__link studio current" href="./index.html">Студия</a>
@@ -73,44 +105,6 @@
 					</li>
 				</ul>
 			</div>
-			<!-- <div class="container main">
-				<nav class="header__nav">
-					<a class="logo" href="./index.html">
-						<span class="logo__cl animate__animated animate__fadeInLeftBig">Web</span>
-						Studio
-					</a>
-
-					<ul class="header__nav__list">
-						<li class="header__nav__item">
-							<a class="header__nav__link studio current" href="./index.html">Студия</a>
-						</li>
-						<li class="header__item">
-							<a class="header__nav__link portfolio" href="./portfolio.html">Портфолио</a>
-						</li>
-						<li class="header__item">
-							<a class="header__nav__link contact" href="">Контакты</a>
-						</li>
-					</ul>
-				</nav>
-				<ul class="header__nav__contact">
-					<li class="header__nav__item">
-						<a class="link" href="mailto:info@devstudio.com">
-							<svg class="icon" width="16" height="12">
-								<use href="./images/icons.svg#icon-mail"></use>
-							</svg>
-							info@devstudio.com
-						</a>
-					</li>
-					<li class="header__nav__item">
-						<a class="link" href="tel:+380961111111">
-							<svg class="icon" width="10" height="16">
-								<use href="./images/icons.svg#icon-tell"></use>
-							</svg>
-							+38 096 111 11 11
-						</a>
-					</li>
-				</ul>
-			</div> -->
 		</header>
 		<!-- Main -->
 		<main>
@@ -679,6 +673,7 @@
 		<!-- Inputmask end -->
 		<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
 		<script src="./js/header-scroll.js"></script>
+		<script src="./js/mobile-menu.js"></script>
 		<script src="./js/modal.js"></script>
 		<script src="./js/menu.js"></script>
 	</body>

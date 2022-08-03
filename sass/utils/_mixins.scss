@@ -8,9 +8,7 @@
 
 
 @mixin button {
-    position: absolute;
-    left: 44%;
-    bottom: 34%;
+    
     transform: translate(-50%, -50%);
     display: inline-block;
     border-radius: 4px;
