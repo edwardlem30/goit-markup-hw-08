@@ -27,19 +27,65 @@
 	<body>
 		<!-- Header -->
 		<header class="header">
-			<div class="container main">
+			<div class="container header-mobile">
+				<a class="logo" href="./index.html">
+					<span class="logo__cl animate__animated animate__fadeInLeftBig">Web</span>
+					Studio
+				</a>
+				<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+					<svg class="icon-menu" width="40" height="40">
+						<use href="./images/icons.svg#icon-menu-open"></use>
+					</svg>
+				</button>
+				<div class="menu-container js-menu-container" id="mobile-menu">
+					<button class="menu-toggle js-close-menu">
+						<svg class="mobile-close-icon" width="40" height="40">
+							<use href="./images/icons.svg#icon-menu-close"></use>
+						</svg>
+					</button>
+					<ul class="mobile-menu">
+						<li href="" class="mobile-menu__link">
+							<a href="./index.html" class="link-menu studio current">Студия</a>
+						</li>
+						<li href="" class="mobile-menu__link">
+							<a href="./portfolio.html" class="link-menu portfolio">Портфолио</a>
+						</li>
+						<li href="" class="mobile-menu__link"><a href="" class="link-menu contact">Контакты</a></li>
+					</ul>
+					<ul class="menu-container__contact">
+						<li class="menu-container__item">
+							<a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+						</li>
+						<li class="menu-container__item">
+							<a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+						</li>
+					</ul>
+					<ul class="menu-container__social">
+						<li>
+							<a href="" class="link-menu__social"></a>
+							Instagram
+						</li>
+						<li>
+							<a href="" class="link-menu__social"></a>
+							Twitter
+						</li>
+						<li>
+							<a href="" class="link-menu__social"></a>
+							Facebook
+						</li>
+						<li>
+							<a href="" class="link-menu__social"></a>
+							Linkedin
+						</li>
+					</ul>
+				</div>
 				<nav class="header__nav">
-					<a class="logo" href="./index.html">
-						<span class="logo__cl animate__animated animate__fadeInLeftBig">Web</span>
-						Studio
-					</a>
-
 					<ul class="header__nav__list">
 						<li class="header__nav__item">
-							<a class="header__nav__link studio" href="./index.html">Студия</a>
+							<a class="header__nav__link studio current" href="./index.html">Студия</a>
 						</li>
 						<li class="header__item">
-							<a class="header__nav__link portfolio current" href="./portfolio.html">Портфолио</a>
+							<a class="header__nav__link portfolio" href="./portfolio.html">Портфолио</a>
 						</li>
 						<li class="header__item">
 							<a class="header__nav__link contact" href="">Контакты</a>
@@ -92,7 +138,49 @@
 						<li class="card__item">
 							<a class="card__art" href="#">
 								<div class="card__slider">
-									<img class="card__img" src="./images/portfolio/img-1.jpg" alt="ноутбук" />
+									<picture>
+										<source
+											media="(max-width: 767px)"
+											src="./images/portfolio/project_jpg/project1_s.jpg 1x, ./images/portfolio/project_jpg/project1_s-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(max-width: 767px)"
+											src="./images/portfolio/project_webp/project1_s.webp 1x, ./images/portfolio/project_webp/project1_s-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<source
+											media="(min-width: 768px)"
+											src="./images/portfolio/project_jpg/project1_m.jpg 1x, ./images/portfolio/project_jpg/project1_m-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 768px)"
+											src="./images/portfolio/project_webp/project1_m.webp 1x, ./images/portfolio/project_webp/project1_m-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<source
+											media="(min-width: 1200px)"
+											src="./images/portfolio/project_jpg/project1_l.jpg 1x, ./images/portfolio/project_jpg/project1_l-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											src="./images/portfolio/project_webp/project1_l.webp 1x, ./images/portfolio/project_webp/team1_l-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<img
+											class="card__img"
+											src="./images/portfolio/project_jpg/project1_s.jpg"
+											alt="ноутбук"
+											width="450"
+											height="294"
+										/>
+									</picture>
+
 									<div class="text__overlay">
 										<p class="text__desc">
 											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -113,7 +201,48 @@
 						<li class="card__item">
 							<a class="card__art" href="#">
 								<div class="card__slider">
-									<img class="card__img" src="./images/portfolio/img-2.jpg" alt="постер" />
+									<picture>
+										<source
+											media="(max-width: 767px)"
+											src="./images/portfolio/project_jpg/project2_s.jpg 1x, ./images/portfolio/project_jpg/project2_s-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(max-width: 767px)"
+											src="./images/portfolio/project_webp/project2_s.webp 1x, ./images/portfolio/project_webp/project2_s-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<source
+											media="(min-width: 768px)"
+											src="./images/portfolio/project_jpg/project2_m.jpg 1x, ./images/portfolio/project_jpg/project2_m-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 768px)"
+											src="./images/portfolio/project_webp/project2_m.webp 1x, ./images/portfolio/project_webp/project2_m-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<source
+											media="(min-width: 1200px)"
+											src="./images/portfolio/project_jpg/project2_l.jpg 1x, ./images/portfolio/project_jpg/project2_l-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											src="./images/portfolio/project_webp/project2_l.webp 1x, ./images/portfolio/project_webp/team1_l-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<img
+											class="card__img"
+											src="./images/portfolio/project_jpg/project2_s.jpg"
+											alt="игроки с мячом"
+											width="450"
+											height="294"
+										/>
+									</picture>
 									<div class="text__overlay">
 										<p class="text__desc">
 											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -138,7 +267,48 @@
 						<li class="card__item">
 							<a class="card__art" href="#">
 								<div class="card__slider">
-									<img class="card__img" src="./images/portfolio/img-3.jpg" alt="рыба как логотип" />
+									<picture>
+										<source
+											media="(max-width: 767px)"
+											src="./images/portfolio/project_jpg/project3_s.jpg 1x, ./images/portfolio/project_jpg/project3_s-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(max-width: 767px)"
+											src="./images/portfolio/project_webp/project3_s.webp 1x, ./images/portfolio/project_webp/project3_s-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<source
+											media="(min-width: 768px)"
+											src="./images/portfolio/project_jpg/project3_m.jpg 1x, ./images/portfolio/project_jpg/project3_m-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 768px)"
+											src="./images/portfolio/project_webp/project3_m.webp 1x, ./images/portfolio/project_webp/project3_m-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<source
+											media="(min-width: 1200px)"
+											src="./images/portfolio/project_jpg/project3_l.jpg 1x, ./images/portfolio/project_jpg/project3_l-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											src="./images/portfolio/project_webp/project3_l.webp 1x, ./images/portfolio/project_webp/team1_l-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<img
+											class="card__img"
+											src="./images/portfolio/project_jpg/project3_s.jpg"
+											alt="рыба как логотип"
+											width="450"
+											height="294"
+										/>
+									</picture>
 									<div class="text__overlay">
 										<p class="text__desc">
 											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -159,7 +329,48 @@
 						<li class="card__item">
 							<a class="card__art" href="#">
 								<div class="card__slider">
-									<img class="card__img" src="./images/portfolio/img-4.jpg" alt="наушники" />
+									<picture>
+										<source
+											media="(max-width: 767px)"
+											src="./images/portfolio/project_jpg/project4_s.jpg 1x, ./images/portfolio/project_jpg/project4_s-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(max-width: 767px)"
+											src="./images/portfolio/project_webp/project4_s.webp 1x, ./images/portfolio/project_webp/project4_s-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<source
+											media="(min-width: 768px)"
+											src="./images/portfolio/project_jpg/project4_m.jpg 1x, ./images/portfolio/project_jpg/project4_m-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 768px)"
+											src="./images/portfolio/project_webp/project4_m.webp 1x, ./images/portfolio/project_webp/project4_m-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<source
+											media="(min-width: 1200px)"
+											src="./images/portfolio/project_jpg/project4_l.jpg 1x, ./images/portfolio/project_jpg/project4_l-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											src="./images/portfolio/project_webp/project4_l.webp 1x, ./images/portfolio/project_webp/team1_l-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<img
+											class="card__img"
+											src="./images/portfolio/project_jpg/project4_s.jpg"
+											alt="наушники"
+											width="450"
+											height="294"
+										/>
+									</picture>
 									<div class="text__overlay">
 										<p class="text__desc">
 											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -180,7 +391,48 @@
 						<li class="card__item">
 							<a class="card__art" href="#">
 								<div class="card__slider">
-									<img class="card__img" src="./images/portfolio/img-5.jpg" alt="две коробочки" />
+									<picture>
+										<source
+											media="(max-width: 767px)"
+											src="./images/portfolio/project_jpg/project5_s.jpg 1x, ./images/portfolio/project_jpg/project5_s-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(max-width: 767px)"
+											src="./images/portfolio/project_webp/project5_s.webp 1x, ./images/portfolio/project_webp/project5_s-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<source
+											media="(min-width: 768px)"
+											src="./images/portfolio/project_jpg/project5_m.jpg 1x, ./images/portfolio/project_jpg/project5_m-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 768px)"
+											src="./images/portfolio/project_webp/project5_m.webp 1x, ./images/portfolio/project_webp/project5_m-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<source
+											media="(min-width: 1200px)"
+											src="./images/portfolio/project_jpg/project5_l.jpg 1x, ./images/portfolio/project_jpg/project5_l-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											src="./images/portfolio/project_webp/project5_l.webp 1x, ./images/portfolio/project_webp/team1_l-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<img
+											class="card__img"
+											src="./images/portfolio/project_jpg/project5_s.jpg"
+											alt="две коробочки"
+											width="450"
+											height="294"
+										/>
+									</picture>
 									<div class="text__overlay">
 										<p class="text__desc">
 											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -201,7 +453,48 @@
 						<li class="card__item">
 							<a class="card__art" href="#">
 								<div class="card__slider">
-									<img class="card__img" src="./images/portfolio/img-6.jpg" alt="монитор" />
+									<picture>
+										<source
+											media="(max-width: 767px)"
+											src="./images/portfolio/project_jpg/project6_s.jpg 1x, ./images/portfolio/project_jpg/project6_s-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(max-width: 767px)"
+											src="./images/portfolio/project_webp/project6_s.webp 1x, ./images/portfolio/project_webp/project6_s-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<source
+											media="(min-width: 768px)"
+											src="./images/portfolio/project_jpg/project6_m.jpg 1x, ./images/portfolio/project_jpg/project6_m-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 768px)"
+											src="./images/portfolio/project_webp/project6_m.webp 1x, ./images/portfolio/project_webp/project6_m-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<source
+											media="(min-width: 1200px)"
+											src="./images/portfolio/project_jpg/project6_l.jpg 1x, ./images/portfolio/project_jpg/project6_l-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											src="./images/portfolio/project_webp/project6_l.webp 1x, ./images/portfolio/project_webp/team1_l-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<img
+											class="card__img"
+											src="./images/portfolio/project_jpg/project6_s.jpg"
+											alt="монитор"
+											width="450"
+											height="294"
+										/>
+									</picture>
 									<div class="text__overlay">
 										<p class="text__desc">
 											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -226,7 +519,48 @@
 						<li class="card__item">
 							<a class="card__art" href="#">
 								<div class="card__slider">
-									<img class="card__img" src="./images/portfolio/img-7.jpg" alt="книга" />
+									<picture>
+										<source
+											media="(max-width: 767px)"
+											src="./images/portfolio/project_jpg/project7_s.jpg 1x, ./images/portfolio/project_jpg/project7_s-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(max-width: 767px)"
+											src="./images/portfolio/project_webp/project7_s.webp 1x, ./images/portfolio/project_webp/project7_s-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<source
+											media="(min-width: 768px)"
+											src="./images/portfolio/project_jpg/project7_m.jpg 1x, ./images/portfolio/project_jpg/project7_m-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 768px)"
+											src="./images/portfolio/project_webp/project7_m.webp 1x, ./images/portfolio/project_webp/project7_m-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<source
+											media="(min-width: 1200px)"
+											src="./images/portfolio/project_jpg/project7_l.jpg 1x, ./images/portfolio/project_jpg/project7_l-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											src="./images/portfolio/project_webp/project7_l.webp 1x, ./images/portfolio/project_webp/team1_l-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<img
+											class="card__img"
+											src="./images/portfolio/project_jpg/project7_s.jpg"
+											alt="книга"
+											width="450"
+											height="294"
+										/>
+									</picture>
 									<div class="text__overlay">
 										<p class="text__desc">
 											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -247,7 +581,48 @@
 						<li class="card__item">
 							<a class="card__art" href="#">
 								<div class="card__slider">
-									<img class="card__img" src="./images/portfolio/img-8.jpg" alt="медальон" />
+									<picture>
+										<source
+											media="(max-width: 767px)"
+											src="./images/portfolio/project_jpg/project8_s.jpg 1x, ./images/portfolio/project_jpg/project8_s-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(max-width: 767px)"
+											src="./images/portfolio/project_webp/project8_s.webp 1x, ./images/portfolio/project_webp/project8_s-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<source
+											media="(min-width: 768px)"
+											src="./images/portfolio/project_jpg/project8_m.jpg 1x, ./images/portfolio/project_jpg/project8_m-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 768px)"
+											src="./images/portfolio/project_webp/project8_m.webp 1x, ./images/portfolio/project_webp/project8_m-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<source
+											media="(min-width: 1200px)"
+											src="./images/portfolio/project_jpg/project8_l.jpg 1x, ./images/portfolio/project_jpg/project8_l-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											src="./images/portfolio/project_webp/project8_l.webp 1x, ./images/portfolio/project_webp/team1_l-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<img
+											class="card__img"
+											src="./images/portfolio/project_jpg/project8_s.jpg"
+											alt="медальон"
+											width="450"
+											height="294"
+										/>
+									</picture>
 									<div class="text__overlay">
 										<p class="text__desc">
 											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -268,7 +643,48 @@
 						<li class="card__item">
 							<a class="card__art" href="#">
 								<div class="card__slider">
-									<img class="card__img" src="./images/portfolio/img-9.jpg" alt="нетбук" />
+									<picture>
+										<source
+											media="(max-width: 767px)"
+											src="./images/portfolio/project_jpg/project9_s.jpg 1x, ./images/portfolio/project_jpg/project9_s-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(max-width: 767px)"
+											src="./images/portfolio/project_webp/project9_s.webp 1x, ./images/portfolio/project_webp/project9_s-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<source
+											media="(min-width: 768px)"
+											src="./images/portfolio/project_jpg/project9_m.jpg 1x, ./images/portfolio/project_jpg/project9_m-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 768px)"
+											src="./images/portfolio/project_webp/project9_m.webp 1x, ./images/portfolio/project_webp/project9_m-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<source
+											media="(min-width: 1200px)"
+											src="./images/portfolio/project_jpg/project9_l.jpg 1x, ./images/portfolio/project_jpg/project9_l-@2x.jpg 2x"
+											type="image/jpg"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											src="./images/portfolio/project_webp/project9_l.webp 1x, ./images/portfolio/project_webp/team1_l-@2x.webp 2x"
+											type="image/webp"
+										/>
+
+										<img
+											class="card__img"
+											src="./images/portfolio/project_jpg/project9_s.jpg"
+											alt="нетбук"
+											width="450"
+											height="294"
+										/>
+									</picture>
 									<div class="text__overlay">
 										<p class="text__desc">
 											Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это

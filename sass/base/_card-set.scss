@@ -30,6 +30,18 @@
 
 &__item {
     width: 370px;
+
+    gap: var(--indent);
+        
+        --items: 1;
+
+    @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            width: 354px;
+            height: 440px;
+            --items: 2;
+        }
 }
 
 &__slider {
@@ -46,6 +58,7 @@
 .card__art {
     display: block;
     text-decoration: none;
+    
 
     &:hover,
     &:focus {

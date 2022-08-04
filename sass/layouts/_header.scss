@@ -1,6 +1,18 @@
 /* Header */
 .header {
     border-bottom: 1px solid #ECECEC;
+    padding-top: 15px;
+        padding-bottom: 15px;
+
+    @media screen and (min-width: 768px) {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+    @media screen and (min-width: 1200px) {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
 
     &-mobile {
 
@@ -29,7 +41,7 @@
 .header__nav__link {
     display: block;
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 28px;
 
     text-decoration: none;
     text-transform: capitalize;

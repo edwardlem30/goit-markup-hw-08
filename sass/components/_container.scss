@@ -19,11 +19,23 @@
             margin-top: 50px;
         }
 
-.container ul,
-li:nth-last-of-type(-n+2) {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
+    @media screen and (min-width: 768px) {
+
+        .container ul,
+        li:nth-last-of-type(-n+2) {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+    .container ul,
+        li:nth-last-of-type(-n+2) {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    }
+
 
 .main {
     display: flex;

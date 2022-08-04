@@ -1,4 +1,35 @@
+
+/* Filter on page two */
 .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     padding: 0px;
     list-style: none;
+    gap: 8px;
+    row-gap: 15px;
+    
+
+
+    @media screen and (min-width: 768px) {
+        
+        justify-content: center;
+    }
+}
+
+.container .filter-list {
+    @media screen and (min-width: 768px) {margin-bottom: 40px;}
+}
+
+.filter-btn {
+    @include filter-btn;
+
+    &.current,
+    &:hover,
+    &:focus {
+
+        color: var(--bcg-color);
+        background-color: var(--accent-txt-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
 }
