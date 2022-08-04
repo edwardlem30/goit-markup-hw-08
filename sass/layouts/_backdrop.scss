@@ -17,9 +17,9 @@
     }
 
     &__item {
-        position: relative;
+        
         min-width: 448px;
-
+        position: relative;
         justify-content: flex-start;
     }
 
@@ -38,6 +38,7 @@
 }
 
 .backdrop__input {
+    
     display: block;
     width: 400px;
     height: 40px;
